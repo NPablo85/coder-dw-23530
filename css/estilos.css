@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#9dc8ec ;
+    height: 100%;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 13em auto 7em; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header"
+      "noticia"
+      "pie"; 
+  }
+ 
+
+/* header */
+
+.header {
+    grid-area: header;
+    background-color: #23485a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.header img{
+    width: 200px;
+    margin-left: 50px;
+    
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    padding-right: 22px;
+    }
+
+.nav li:hover{
+    transform: scale(1.2);
+}
+
+.nav li{
+    transition: transform 0.8s;
+}
+
+.nav li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 25px;
+    text-decoration: none;
+  
+}
+
+
+  
+  
+
+
+
+
+ /* Section noticias */
+
+ .noticia { grid-area: noticia; }
+
+.main{
+    background-color: #9dc8ec    ;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1080px;
+    height: 100%;
+    min-height: calc(100vh - 200px - 116px);
+}
+
+
+.main h2{
+    font-family: sans-serif;
+    font-size: 50px;
+    padding: 40px ;
+    
+}
+
+
+.main img{
+    border: solid 5px grey;
+    width: 800px;
+}
+
+.main p{
+    font-family: sans-serif;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: justify;
+
+}
+
+.main section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.main .section2{
+    border-top: solid 2px lightgrey;
+}
+
+.main .section3{
+    border-top: solid 2px lightgrey;
+}
+
+/*  Footer */
+
+
+.pie{
+    grid-area: pie;
+    background-color:#23485a ;
+    height: 116px;
+}
+
+.imgRedes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.imgRedes ul{
+    list-style: none;
+}
+
+.redes{
+    display: flex;
+}
+
+.redes li a{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 0px 20px;
+}
+
+.pie  h3{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.pie img{
+    width: 100px;
+    padding-left: 15px;
+}
+
+
+/* ----------------INSTITUCIONAL----------------------- */
+
+.historia{
+        display: flex;
+        align-items: center;
+}
+
+
+/* ---------------REGLAMENTO-------------------------- */
+.reglamento h2{
+    font-family: sans-serif;
+    font-size: 50px;
+    padding: 40px;
+}
+
+
+/* ---------------CAPACITACION-------------------------- */
+
+.capacitacion h2{
+    font-family: sans-serif;
+    font-size: 50px;
+    padding: 40px;
+}
+
+/* ---------------CONTACTO-------------------------- */
+
+.main{
+    background-color: #9dc8ec    ;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonContacto{
+    background-color: rgb(197, 197, 233);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.mapa {
+    padding: 70px 15px;
+}
+
+
+
+/* ---------MEDIA QUERYS-------------- */
+
+
+
+@media only screen and (min-width: 1024px) {
+    .header {
+        grid-area: header;
+        background-color: #23485A;}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+
+    .header {
+        background-color: red;
+        grid-area: header;
+        /* background-color: #23485a; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 122px;
+        width: 100vw;
+    }
+    
+    .header img{
+            width: 100px;
+            margin-left: 50px;
+            
+        }
+    .nav li a{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 19px;
+            color: white;
+            padding: 25px;
+            text-decoration: none;
+          
+        }
+        .main{
+            background-color: #9dc8ec    ;
+            padding: 10px;
+            margin: 0 auto;
+            width: 100vw;
+            height: 100%;
+            min-height: calc(100vh - 200px - 116px);
+        }
+        .main p {
+            font-family: sans-serif;
+            padding-top: 40px;
+            padding-bottom: 15px;
+            text-align: justify;
+            width: 78vw;
+        }
+        
+        section {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 10px;
+            width: 90vw;
+        }
+        
+    .pie {
+            grid-area: pie;
+            display: flex;
+            justify-content: space-around;
+            background-color: #23485a;
+            height: 122px;
+            width: 100.4 vw;
+        }
+
+   
+
+        /* Insitucional */
+    .historia{
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            margin: auto;
+    }
+
+    .main img {
+        width: 516px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .header {
+        background-color: greenyellow;}
+
+        .main p {
+            font-family: sans-serif;
+            padding-top: 40px;
+            padding-bottom: 15px;
+            text-align: justify;
+            width: 78vw;
+        }
+        
+        .main img {
+            width: 516px;
+        }
+
+        .header {
+            
+            grid-area: header;
+            /* background-color: #23485a; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 122px;
+            width: 95vw;
+        }
+        
+        .header img{
+                width: 70px;
+                margin-left: 50px;
+                
+            }
+
+            .nav li a{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 19px;
+                color: white;
+                padding: 25px;
+                text-decoration: none;
+              
+            } 
+            .pie {
+                grid-area: pie;
+                display: flex;
+                justify-content: space-around;
+                background-color: #23485a;
+                height: 122px;
+                width: 100.4 vw;
+            }   
+    }
+
+    .reglamento{
+        background-color: #9dc8ec    ;
+        padding: 10px;
+        margin: 0 auto;
+        width: 100vw;
+        height: 100%;
+        min-height: calc(100vh - 200px - 116px);
+    }
