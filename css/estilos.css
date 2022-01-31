@@ -9,7 +9,7 @@ body{
     height: 100%;
 }
 
-.container {
+.grid {
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: 13em auto 7em; 
@@ -44,15 +44,18 @@ body{
     padding-right: 22px;
     }
 
-.nav li:hover{
+.nav li:hover {
     transform: scale(1.2);
+    color: white;
+    
 }
 
-.nav li{
+.nav li {
     transition: transform 0.8s;
+    
 }
 
-.nav li a{
+.fuenteNav{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     color: white;
@@ -90,7 +93,7 @@ body{
 }
 
 
-.main img{
+.noticiasImagenes{
     border: solid 5px grey;
     width: 800px;
 }
@@ -124,7 +127,7 @@ body{
 .pie{
     grid-area: pie;
     background-color:#23485a ;
-    height: 116px;
+    height: 128px;
 }
 
 .imgRedes{
@@ -167,6 +170,11 @@ body{
         align-items: center;
 }
 
+.titulos{
+    font-size: 65px;
+}
+
+
 
 /* ---------------REGLAMENTO-------------------------- */
 .reglamento h2{
@@ -175,13 +183,108 @@ body{
     padding: 40px;
 }
 
+/* css boostrap */
+.probando{
+    justify-content: flex-end;
+}
 
 /* ---------------CAPACITACION-------------------------- */
 
-.capacitacion h2{
-    font-family: sans-serif;
-    font-size: 50px;
-    padding: 40px;
+/* header */
+.header{
+    background-color: #23485a;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.fotoLogo{
+    height: 199px;
+}
+
+.nav{
+    padding-right: 10px;
+}
+
+.linkNav{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.nav li:hover{
+    transform: scale(1.2);
+}
+
+.nav li {
+    transition: transform 0.8s;
+
+}
+/* main */
+
+.container {
+    height: 65vh;
+}
+
+.mainCapacitacion{
+    background-color: #9dc8ec;
+    margin: 0 auto;
+    height: 100%;
+    
+}
+.infoCapacitacion{
+    padding: 121px;
+    display: flex;
+    align-items: center;
+}
+.fotoCurso{
+    width: 650px;
+}
+/* footer */
+
+.pie{
+    grid-area: pie;
+    background-color:#23485a ;
+    height: 128px;
+}
+
+.imgRedes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.imgRedes ul{
+    list-style: none;
+    padding-right: 10px;
+}
+
+.redes{
+    display: flex;
+}
+
+.redes li a{
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 0px 20px;
+}
+
+.pie  h3{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.pie img{
+    width: 100px;
+    padding-left: 15px;
+}
+
+.copyrFooter {
+    font-size: 20px;
 }
 
 /* ---------------CONTACTO-------------------------- */
@@ -214,144 +317,39 @@ body{
 
 /* ---------MEDIA QUERYS-------------- */
 
+/* Capacitacion */
+@media only screen and (min-width: 1024px){
 
-
-@media only screen and (min-width: 1024px) {
-    .header {
-        grid-area: header;
-        background-color: #23485A;}
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    
 
-    .header {
-        background-color: red;
-        grid-area: header;
-        /* background-color: #23485a; */
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+    .navbar{
         display: flex;
-        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .infoCapacitacion {
+        /* padding: 33px; */
+        display: flex;
         align-items: center;
-        height: 122px;
-        width: 100vw;
     }
-    
-    .header img{
-            width: 100px;
-            margin-left: 50px;
-            
-        }
-    .nav li a{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 19px;
-            color: white;
-            padding: 25px;
-            text-decoration: none;
-          
-        }
-        .main{
-            background-color: #9dc8ec    ;
-            padding: 10px;
-            margin: 0 auto;
-            width: 100vw;
-            height: 100%;
-            min-height: calc(100vh - 200px - 116px);
-        }
-        .main p {
-            font-family: sans-serif;
-            padding-top: 40px;
-            padding-bottom: 15px;
-            text-align: justify;
-            width: 78vw;
-        }
-        
-        section {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding-bottom: 10px;
-            width: 90vw;
-        }
-        
-    .pie {
-            grid-area: pie;
-            display: flex;
-            justify-content: space-around;
-            background-color: #23485a;
-            height: 122px;
-            width: 100.4 vw;
-        }
-
-   
-
-        /* Insitucional */
-    .historia{
-            display: flex;
-            align-items: center;
-            padding: 30px;
-            margin: auto;
-    }
-
-    .main img {
-        width: 516px;
-    }
+  .fotoCurso{
+      width: 340px;
+  }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-    .header {
-        background-color: greenyellow;}
-
-        .main p {
-            font-family: sans-serif;
-            padding-top: 40px;
-            padding-bottom: 15px;
-            text-align: justify;
-            width: 78vw;
-        }
-        
-        .main img {
-            width: 516px;
-        }
-
-        .header {
-            
-            grid-area: header;
-            /* background-color: #23485a; */
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 122px;
-            width: 95vw;
-        }
-        
-        .header img{
-                width: 70px;
-                margin-left: 50px;
-                
-            }
-
-            .nav li a{
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 19px;
-                color: white;
-                padding: 25px;
-                text-decoration: none;
-              
-            } 
-            .pie {
-                grid-area: pie;
-                display: flex;
-                justify-content: space-around;
-                background-color: #23485a;
-                height: 122px;
-                width: 100.4 vw;
-            }   
+@media only screen and (max-width: 767px) { 
+    .navbar{
+        display: flex;
+        flex-wrap: nowrap;
     }
-
-    .reglamento{
-        background-color: #9dc8ec    ;
-        padding: 10px;
-        margin: 0 auto;
-        width: 100vw;
-        height: 100%;
-        min-height: calc(100vh - 200px - 116px);
+    
+    .infoCapacitacion {
+        padding: 60px;
     }
+    
+    .fotoCurso{
+        width: 340px;
+    }
+ }
+
