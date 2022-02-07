@@ -1,0 +1,20 @@
+.mainCapacitacion{
+    background-color: #9dc8ec;
+    margin: 0 auto;
+    height: 100%; 
+    .container {
+        height: 65vh;
+    
+        .infoCapacitacion{
+        padding: 121px;
+        display: flex;
+        align-items: center;
+            .tituloCapacitacion{
+            font-size: 60px;
+            }
+            .fotoCurso{
+                width: 650px;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.pie{
+    grid-area: pie;
+    background-color:#23485a ;
+    height: 128px;
+    .imgRedes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logoFooter{
+            width: 100px;
+            padding-left: 15px;
+        }
+        
+            ul{
+                list-style: none;
+                padding-right: 10px;
+                display: flex;
+                li a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 40px;
+                    padding: 0px 20px;
+                }
+            }
+        
+    }
+    .copyrFooter{
+        font-size: 20px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+}

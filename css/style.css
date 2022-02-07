@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #9dc8ec;
+  height: 100%; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 13em auto 7em;
+  gap: 0px 0px;
+  grid-template-areas: "header" "noticia" "pie"; }
+
+.header {
+  background-color: #23485a;
+  display: flex;
+  justify-content: space-between;
+  height: 200px; }
+  .header .logo .img-fluid {
+    max-width: 91%;
+    height: auto; }
+  .header .navPadre {
+    padding-right: 16px; }
+    .header .navPadre .linkNav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 30px;
+      margin: 10px;
+      transition: 0.8s; }
+      .header .navPadre .linkNav a:hover {
+        transform: scale(3);
+        background-color: green; }
+
+.pie {
+  grid-area: pie;
+  background-color: #23485a;
+  height: 128px; }
+  .pie .imgRedes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .pie .imgRedes .logoFooter {
+      width: 100px;
+      padding-left: 15px; }
+    .pie .imgRedes ul {
+      list-style: none;
+      padding-right: 10px;
+      display: flex; }
+      .pie .imgRedes ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 40px;
+        padding: 0px 20px; }
+  .pie .copyrFooter {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px; }
+
+.mainCapacitacion {
+  background-color: #9dc8ec;
+  margin: 0 auto;
+  height: 100%; }
+  .mainCapacitacion .container {
+    height: 65vh; }
+    .mainCapacitacion .container .infoCapacitacion {
+      padding: 121px;
+      display: flex;
+      align-items: center; }
+      .mainCapacitacion .container .infoCapacitacion .tituloCapacitacion {
+        font-size: 60px; }
+      .mainCapacitacion .container .infoCapacitacion .fotoCurso {
+        width: 650px; }
+
+/* Section noticias */
+.noticia {
+  grid-area: noticia; }
+
+.main {
+  background-color: #9dc8ec;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 1080px;
+  height: 100%;
+  min-height: calc(100vh - 200px - 116px); }
+
+.tituloNoticia {
+  font-family: sans-serif;
+  font-size: 60px;
+  padding: 40px; }
+
+.noticiasImagenes {
+  border: solid 5px grey;
+  width: 800px; }
+
+.parrafoNoticia {
+  font-family: sans-serif;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  text-align: justify; }
+
+.main section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10px; }
+
+.borderTop {
+  border-top: solid 2px lightgrey; }
+
+/* ----------------INSTITUCIONAL----------------------- */
+.historia {
+  display: flex;
+  align-items: stretch; }
+
+.titulos {
+  font-size: 65px; }
+
+.parrafoHistoria {
+  padding-top: 65px; }
+
+/* ---------------REGLAMENTO-------------------------- */
+.reglamentoPdf {
+  width: 100%;
+  height: 500px; }
+
+/* css boostrap */
+.probando {
+  justify-content: flex-end; }
+
+/* ---------------CONTACTO-------------------------- */
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.botonContacto {
+  background-color: #c5c5e9;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 2px; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; }
+
+textarea {
+  height: 150px;
+  resize: none; }
+
+.mapa {
+  padding: 70px 15px; }
+
+/* ---------MEDIA QUERYS-------------- */
+/* Capacitacion */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap; }
+  .infoCapacitacion {
+    /* padding: 33px; */
+    display: flex;
+    align-items: center; }
+  .fotoCurso {
+    width: 340px; } }
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap; }
+  .infoCapacitacion {
+    padding: 60px; }
+  .fotoCurso {
+    width: 340px; } }

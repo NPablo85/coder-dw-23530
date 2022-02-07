@@ -21,38 +21,14 @@ body{
   }
  
 
-/* header */
+//IMPORTACIONES
+@import './header-footer/header';
+@import './header-footer/footer';
+@import './notaprincipal/mainCapa';
 
-.header{
-    background-color: #23485a;
-    display: flex;
-    justify-content: space-between;
-    height: 200px;
-}
 
-.fotoLogo{
-    height: 199px;
-}
 
-.nav{
-    padding-right: 16px;
-}
 
-.linkNav{
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 30px;
-    margin: 10px;
-}
-
-.nav li:hover{
-    transform: scale(1.2);
-}
-
-.nav li {
-    transition: transform 0.8s;
-}
 
 
  /* Section noticias */
@@ -100,49 +76,6 @@ body{
 }
 
 
-/*  Footer */
-
-.pie{
-    grid-area: pie;
-    background-color:#23485a ;
-    height: 128px;
-}
-
-.imgRedes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.imgRedes ul{
-    list-style: none;
-    padding-right: 10px;
-}
-
-.redes{
-    display: flex;
-}
-
-.redes li a{
-    color: white;
-    text-decoration: none;
-    font-size: 40px;
-    padding: 0px 20px;
-}
-
-.pie  h3{
-    padding-left: 10px;
-    padding-bottom: 10px;
-}
-
-.logoFooter{
-    width: 100px;
-    padding-left: 15px;
-}
-
-.copyrFooter{
-    font-size: 20px;
-}
 
 
 /* ----------------INSTITUCIONAL----------------------- */
@@ -170,31 +103,14 @@ body{
     justify-content: flex-end;
 }
 
-/* ---------------CAPACITACION-------------------------- */
 
 
-/* main */
 
-.container {
-    height: 65vh;
-}
 
-.mainCapacitacion{
-    background-color: #9dc8ec;
-    margin: 0 auto;
-    height: 100%; 
-}
-.infoCapacitacion{
-    padding: 121px;
-    display: flex;
-    align-items: center;
-}
-.tituloCapacitacion{
-    font-size: 60px;
-}
-.fotoCurso{
-    width: 650px;
-}
+
+
+
+
 
 
 /* ---------------CONTACTO-------------------------- */
@@ -263,5 +179,3 @@ textarea{
         width: 340px;
     }
  }
-
-

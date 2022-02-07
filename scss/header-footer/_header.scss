@@ -1,0 +1,29 @@
+.header{
+    background-color: #23485a;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    .logo{
+        .img-fluid{
+            max-width: 91%;
+            height: auto;
+        }
+    }
+    .navPadre{
+        padding-right: 16px;
+        .linkNav{              
+                a {color: white;
+                text-decoration: none;
+                padding: 10px;
+                font-size: 30px;
+                margin: 10px;             
+                transition: 0.8s;
+                &:hover{
+                    transform: scale(3);
+                    background-color: green;
+                    
+                }           
+            }
+        }
+    }
+}
