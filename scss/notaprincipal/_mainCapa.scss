@@ -12,6 +12,13 @@
             .tituloCapacitacion{
             font-size: 60px;
             }
+            .subtituloCap{
+                @include contenedor();
+            }
+            .textoInfo{
+                @extend %estilosParrafo;
+                
+            }
             .fotoCurso{
                 width: 650px;
             }

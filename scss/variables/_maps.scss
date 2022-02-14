@@ -1,0 +1,14 @@
+/*Mapa*/
+$textoResaltado: (
+    fecha: $naranja,
+    monto: $rojizo,
+    inicio: rgb(18, 18, 94), 
+);
+
+/* Bucle */
+@each $frases, $color in $textoResaltado{
+    .#{$frases}{
+        color: $color;
+        font-weight: bold;
+    }
+}

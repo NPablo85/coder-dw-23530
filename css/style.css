@@ -14,6 +14,25 @@ body {
   gap: 0px 0px;
   grid-template-areas: "header" "noticia" "pie"; }
 
+.mainCapacitacion .container .infoCapacitacion .textoInfo {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 1.2rem; }
+
+/*Mapa*/
+/* Bucle */
+.fecha {
+  color: #a3792a;
+  font-weight: bold; }
+
+.monto {
+  color: #702d12;
+  font-weight: bold; }
+
+.inicio {
+  color: #12125e;
+  font-weight: bold; }
+
 .header {
   background-color: #23485a;
   display: flex;
@@ -72,6 +91,8 @@ body {
       align-items: center; }
       .mainCapacitacion .container .infoCapacitacion .tituloCapacitacion {
         font-size: 60px; }
+      .mainCapacitacion .container .infoCapacitacion .subtituloCap {
+        color: #8b8888; }
       .mainCapacitacion .container .infoCapacitacion .fotoCurso {
         width: 650px; }
 

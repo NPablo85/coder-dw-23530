@@ -20,6 +20,11 @@ body{
       "pie"; 
   }
  
+  //primero van las variables
+@import './variables/colores';  
+@import './variables/extend';
+@import './variables/mixin';
+@import './variables/maps';
 
 //IMPORTACIONES
 @import './header-footer/header';
