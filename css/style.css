@@ -52,7 +52,7 @@ body {
       transition: 0.8s; }
       .header .navPadre .linkNav a:hover {
         transform: scale(3);
-        background-color: green; }
+        background-color: #57d2d8; }
 
 .pie {
   grid-area: pie;
@@ -143,10 +143,15 @@ body {
 .parrafoHistoria {
   padding-top: 65px; }
 
+/* ---------------CAPACITACION-------------------------- */
+.textoInfo {
+  padding-top: 10px; }
+
 /* ---------------REGLAMENTO-------------------------- */
 .reglamentoPdf {
   width: 100%;
-  height: 500px; }
+  height: 500px;
+  padding-top: 5px; }
 
 /* css boostrap */
 .probando {
@@ -168,6 +173,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch; }
+  .formulario .mail {
+    margin-top: 5px; }
+  .formulario .texto {
+    margin-top: 5px; }
 
 textarea {
   height: 150px;
@@ -178,14 +187,50 @@ textarea {
 
 /* ---------MEDIA QUERYS-------------- */
 /* Capacitacion */
+@media only screen and (min-width: 1280px) {
+  /* Capaticacion*/
+  .mainCapacitacion .container .infoCapacitacion {
+    padding: 49px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; } }
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .navbar {
     display: flex;
     flex-wrap: nowrap; }
+  .header .navPadre .linkNav a {
+    font-size: 25px; }
+  /*INDEX*/
+  .noticiasImagenes {
+    border: solid 5px grey;
+    width: 80vw; }
+  .parrafoNoticia {
+    font-family: sans-serif;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: justify;
+    width: 70vw; }
+  /*CONTACTO*/
+  .contacto {
+    padding-top: 50px; }
+    .contacto .formulario {
+      width: 60vw;
+      height: 27vh; }
+  /*CAPACITACION*/
   .infoCapacitacion {
-    /* padding: 33px; */
+    padding: 33px;
     display: flex;
     align-items: center; }
+  .mainCapacitacion .container {
+    height: 68vh; }
+  .mainCapacitacion .container .infoCapacitacion .fotoCurso {
+    width: 419px; }
+  .mainCapacitacion .container .infoCapacitacion {
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
   .fotoCurso {
     width: 340px; } }
 
@@ -193,7 +238,15 @@ textarea {
   .navbar {
     display: flex;
     flex-wrap: nowrap; }
+  .header .navPadre .linkNav a {
+    font-size: 25px; }
   .infoCapacitacion {
     padding: 60px; }
+  .mainCapacitacion .container .infoCapacitacion .fotoCurso {
+    width: 419px; }
+  .mainCapacitacion .container .infoCapacitacion {
+    padding: 13px;
+    display: flex;
+    align-items: center; }
   .fotoCurso {
     width: 340px; } }
